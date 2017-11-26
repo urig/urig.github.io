@@ -1,23 +1,64 @@
----
-layout: default
----
+<!DOCTYPE HTML>
+<html>
 
-<div class="home">
+<head>
+	<title>urig.io</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<style>
+		body,
+		textarea {
+			font-family: 'Verdana';
+		}
 
-  <h1 class="page-heading">Posts</h1>
+		textarea,
+		input {
+			width: 100%;
+		}
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+		.h1 {
+			font-family: 'Courier New', Courier, monospace;
+			font-size: 3em;
+			text-align: center;
+		}
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+		#description {
+			width: 70%;
+			margin-left: auto;
+			margin-right: auto;
+			text-align: left;
+		}
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+		#content {
+			width: 15rem;
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+			border: solid 1px red;
+		}
+	</style>
+</head>
 
-</div>
+<body>
+	<div id="content">
+		<h1>urig.io</h1>
+		<div id="description">
+			<p>Hi, I'm Uri Goldstein
+				<br/> Software developer,
+				<br/> architect, mentor
+				<br/> and speaker.</p>
+		</div>
+		<p>Let me know how I can help:
+			<form>
+				<textarea name="message" rows="6"></textarea>
+				<br/>
+				<input type="submit" name="Send" />
+			</form>
+		</p>
+		<p>Or email me at
+			<a href="mailto:urig@urig.io">urig@urig.io</a>
+		</p>
+	</div>
+</body>
+
+</html>
