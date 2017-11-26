@@ -13,11 +13,16 @@
 
 		textarea,
 		input {
+			box-sizing: border-box;
+			-moz-box-sizing: border-box;
 			width: 100%;
+			margin: 0px;
+			/*padding-left: 1rem;
+			padding-right: 1rem;*/
 		}
 
-		.h1 {
-			font-family: 'Courier New', Courier, monospace;
+		#logo {
+			font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
 			font-size: 3em;
 			text-align: center;
 		}
@@ -34,14 +39,13 @@
 			margin-left: auto;
 			margin-right: auto;
 			text-align: center;
-			border: solid 1px red;
 		}
 	</style>
 </head>
 
 <body>
 	<div id="content">
-		<h1>urig.io</h1>
+		<h1 id="logo">urig.io</h1>
 		<div id="description">
 			<p>Hi, I'm Uri Goldstein
 				<br/> Software developer,
@@ -49,10 +53,11 @@
 				<br/> and speaker.</p>
 		</div>
 		<p>Let me know how I can help:
-			<form>
-				<textarea name="message" rows="6"></textarea>
+			<form id="contactForm" method="GET" action="https://urig-contactform.azurewebsites.net/api/HttpTriggerCSharp1?code=knzrDHfMsFOBuq5w3Ha5xfT3XP//as25vYqQPQXFdSU3YUpH9upxbA==">
+				<input type="hidden" name="code" value="knzrDHfMsFOBuq5w3Ha5xfT3XP//as25vYqQPQXFdSU3YUpH9upxbA=="/>
+				<textarea name="message" id="message" rows="6"></textarea>
 				<br/>
-				<input type="submit" name="Send" />
+				<input type="submit" name="Send" value="Send" />
 			</form>
 		</p>
 		<p>Or email me at
