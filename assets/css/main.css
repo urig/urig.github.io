@@ -1484,6 +1484,10 @@
 					background-color: #DA2713;
 				}
 
+				ul.social li a.fa-envelope {
+					background-color: #E0D7C8;
+				}
+
 				ul.social li a.fa-github {
 					background-color: #FAFAFA;
 				}
