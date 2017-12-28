@@ -1,0 +1,8 @@
+.post-list {
+    text-align: left;
+    margin-left: 0;
+    list-style: none;
+}  
+.post .li {
+      /* margin-bottom: $spacing-unit; */
+}
