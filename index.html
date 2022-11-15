@@ -1,71 +1,328 @@
 <!DOCTYPE HTML>
+<!--
+	Verti by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
 
 <head>
-	<title>urig.io</title>
+	<title>urig.io - Uri Goldstein, Bespoke Software Services</title>
 	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<style>
-		body,
-		textarea,
-		input {
-			font-family: 'Verdana';
-			font-size: 1.5rem;
-		}
-
-		textarea,
-		input {
-			box-sizing: border-box;
-			-moz-box-sizing: border-box;
-			width: 100%;
-			margin: 0px;
-			/*padding-left: 1rem;
-			padding-right: 1rem;*/
-		}
-
-		#logo {
-			font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
-			font-size: 3.5em;
-			text-align: center;
-		}
-
-		#description {
-			width: 70%;
-			margin-left: auto;
-			margin-right: auto;
-			text-align: left;
-		}
-
-		#content {
-			width: 22.5rem;
-			margin-left: auto;
-			margin-right: auto;
-			text-align: center;
-		}
-	</style>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
 </head>
 
-<body>
-	<div id="content">
-		<h1 id="logo">urig.io</h1>
-		<div id="description">
-			<p>Hi, I'm Uri Goldstein
-				<br/> Software developer,
-				<br/> architect, mentor
-				<br/> and speaker.</p>
+<body class="is-preload homepage">
+	<div id="page-wrapper">
+
+		<!-- Header -->
+		<div id="header-wrapper">
+			<header id="header" class="container">
+
+				<!-- Logo -->
+				<div id="logo">
+					<h1><a href="index.html">urig.io</a></h1>
+					<span>Bespoke Software Services</span>
+				</div>
+
+				<!-- Nav -->
+				<nav id="nav">
+					<ul>
+						<li class="current"><a href="#">Welcome</a></li>
+						<li class="current"><a href="#">About</a></li>
+						<li class="current"><a href="#contact">Contact Me</a></li>
+						<!--li>
+							<a href="#">Dropdown</a>
+							<ul>
+								<li><a href="#">Lorem ipsum dolor</a></li>
+								<li><a href="#">Magna phasellus</a></li>
+								<li>
+									<a href="#">Phasellus consequat</a>
+									<ul>
+										<li><a href="#">Lorem ipsum dolor</a></li>
+										<li><a href="#">Phasellus consequat</a></li>
+										<li><a href="#">Magna phasellus</a></li>
+										<li><a href="#">Etiam dolore nisl</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Veroeros feugiat</a></li>
+							</ul>
+						</li>
+						<li><a href="left-sidebar.html">Left Sidebar</a></li>
+						<li><a href="right-sidebar.html">Right Sidebar</a></li>
+						<li><a href="no-sidebar.html">No Sidebar</a></li-->
+					</ul>
+				</nav>
+
+			</header>
 		</div>
-		<p>Let me know how I can help:
-			<form id="contactForm" method="GET" action="https://urig-contactform.azurewebsites.net/api/HttpTriggerCSharp1?code=knzrDHfMsFOBuq5w3Ha5xfT3XP//as25vYqQPQXFdSU3YUpH9upxbA==">
-				<input type="hidden" name="code" value="knzrDHfMsFOBuq5w3Ha5xfT3XP//as25vYqQPQXFdSU3YUpH9upxbA=="/>
-				<textarea name="message" id="message" rows="6"></textarea>
-				<br/>
-				<input type="submit" name="Send" value="Send" />
-			</form>
-		</p>
-		<p>Or email me at
-			<a href="mailto:urig@urig.io">urig@urig.io</a>
-		</p>
+
+		<!-- Banner -->
+		<div id="banner-wrapper">
+			<div id="banner" class="box container">
+				<div class="row">
+					<div class="col-7 col-12-medium">
+						<h2>Hi. I'm Uri Goldstein.</h2>
+						<p>How can I help you?</p>
+					</div>
+					<div class="col-5 col-12-medium">
+						<ul>
+							<li><a href="#main-wrapper" class="button large icon solid fa-comment-medical">Contact
+									Me</a></li>
+							<li><a href="#" class="button alt large icon solid fa-info-circle">Learn More</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Features -->
+		<div id="features-wrapper">
+			<div class="container">
+				<div class="row">
+					<div class="col-4 col-12-medium">
+
+						<!-- Box -->
+						<section class="box feature">
+							<a href="#" class="image featured"><img src="images/consulting2.webp" alt="" /></a>
+							<div class="inner">
+								<header>
+									<h2>Consulting</h2>
+								</header>
+								<p>Are you migrating to AWS, GCP or Azure? Building MLOps pipelines? Trying to get your
+									team
+									up to speed on new skills and best practices? <em>I'm here to help</em>.</p>
+								<p>I've been designing cloud-native distributed systems for over a decade and a half and
+									helped dozens of teams pick up unit testing, CI/CD, container architectures and so
+									much more.</p>
+							</div>
+						</section>
+
+					</div>
+					<div class="col-4 col-12-medium">
+
+						<!-- Box -->
+						<section class="box feature">
+							<a href="#" class="image featured"><img src="images/whiteboard.png" alt="" /></a>
+							<div class="inner">
+								<header>
+									<h2>Teaching</h2>
+								</header>
+								<p>Passing on knowledge gained over years of field work is my passion. I've been
+									building and teaching courses and workshops for organization big and small. </p>
+								<p>The subjects I've taught include microservice architectures, test automation,
+									refactoring legacy code, domain-driven design, and the Python language.
+								<p>My pride and joy is the course <em>Databases and SQL</em> that I authored and have
+									been teaching at <em>Reichman University</em> in Israel for the past 6 years.
+								</p>
+							</div>
+						</section>
+
+					</div>
+					<div class="col-4 col-12-medium">
+
+						<!-- Box -->
+						<section class="box feature">
+							<a href="#" class="image featured"><img src="images/programming.webp" alt="" /></a>
+							<div class="inner">
+								<header>
+									<h2>Coding</h2>
+								</header>
+								<p>Programming has been my passion since I first laid hands on a computer in
+									elementary school. Fingers on the keyboard are the only way to keep learning and to
+									stay sharp and so I always strive to have a hands-on coding project to work on.</p>
+								<p>My goto platforms are
+									<em>Python</em>, <em>Java</em>, <em>C#</em>,
+									<em>Javascript</em> and <em>TypeScript</em> and I'm always eager to add more
+									languages
+									to the list.
+								</p>
+								</p>
+							</div>
+						</section>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Main -->
+		<a name="contact"></a>
+		<div id="main-wrapper">
+			<div class="container">
+				<div class="row gtr-200">
+					<div class="col-4 col-12-medium">
+
+						<!-- Sidebar -->
+						<!--div id="sidebar">
+							<section class="widget thumbnails">
+								<h3>Interesting stuff</h3>
+								<div class="grid">
+									<div class="row gtr-50">
+										<div class="col-6"><a href="#" class="image fit"><img src="images/pic04.jpg"
+													alt="" /></a></div>
+										<div class="col-6"><a href="#" class="image fit"><img src="images/pic05.jpg"
+													alt="" /></a></div>
+										<div class="col-6"><a href="#" class="image fit"><img src="images/pic06.jpg"
+													alt="" /></a></div>
+										<div class="col-6"><a href="#" class="image fit"><img src="images/pic07.jpg"
+													alt="" /></a></div>
+									</div>
+								</div>
+								<a href="#" class="button icon fa-file-alt">More</a>
+							</section>
+						</div-->
+
+					</div>
+					<div class="col-8 col-12-medium imp-medium">
+
+						<!-- Content -->
+						<div id="content">
+							<section class="last">
+								<h2>Contact Me</h2>
+								<p>I'd love to hear from you. Write a short message below and click the "Send"
+									button. Please remember to include an email address or phone number where I can get
+									back to you.</p>
+								<form action="https://api.web3forms.com/submit" method="POST">
+									<div class="grid">
+										<div class="row ">
+											<div class="col-12">
+												<input type="hidden" name="access_key"
+													value="c1de7fe8-09f5-45e3-9f8c-e969e801df43">
+												<textarea id="message" name="message" class="fit"></textarea>
+											</div>
+										</div>
+										<div class="row aln-right">
+											<div class="col-12">&nbsp;</div>
+										</div>
+
+										<div class="row aln-right">
+											<div class="col-12"></div>
+											<input type="submit" class="button" value="Send"></input>
+										</div>
+									</div>
+						</div>
+						</p>
+						<!--input type="hidden" name="redirect" value="https://web3forms.com/success"-->
+						</form>
+						<p></p>
+						<p>Or, if you prefer, reach out to me on:
+						<ul class="style2">
+							<li><span class="fab fa-linkedin"></span>&nbsp;LinkedIn: <a
+									href="https://www.linkedin.com/in/urigoldstein/">https://www.linkedin.com/in/urigoldstein/</a>
+							</li>
+							<li><span class="fas fa-at"></span>&nbsp;Email: <a
+									href="mailto:info@urig.io">info@urig.io</a></li>
+							<li><span class="fab fa-mastodon"></span>&nbsp;Mastodon: <a
+									href="https://mastodon.online/@urig">urig@mastodon.online</a></li>
+						</ul>
+						</p>
+						</section>
+					</div>
+
+				</div>
+			</div>
+		</div>
 	</div>
+
+	<!-- Footer -->
+	<div id="footer-wrapper">
+		<footer id="footer" class="container">
+			<!--
+				<div class="row">
+					<div class="col-3 col-6-medium col-12-small">
+
+						<!-- Links --
+						<section class="widget links">
+							<h3>Random Stuff</h3>
+							<ul class="style2">
+								<li><a href="#">Etiam feugiat condimentum</a></li>
+								<li><a href="#">Aliquam imperdiet suscipit odio</a></li>
+								<li><a href="#">Sed porttitor cras in erat nec</a></li>
+								<li><a href="#">Felis varius pellentesque potenti</a></li>
+								<li><a href="#">Nullam scelerisque blandit leo</a></li>
+							</ul>
+						</section>
+
+					</div>
+					<div class="col-3 col-6-medium col-12-small">
+
+						<!-- Links --
+						<section class="widget links">
+							<h3>Random Stuff</h3>
+							<ul class="style2">
+								<li><a href="#">Etiam feugiat condimentum</a></li>
+								<li><a href="#">Aliquam imperdiet suscipit odio</a></li>
+								<li><a href="#">Sed porttitor cras in erat nec</a></li>
+								<li><a href="#">Felis varius pellentesque potenti</a></li>
+								<li><a href="#">Nullam scelerisque blandit leo</a></li>
+							</ul>
+						</section>
+
+					</div>
+					<div class="col-3 col-6-medium col-12-small">
+
+						<!-- Links --
+						<section class="widget links">
+							<h3>Random Stuff</h3>
+							<ul class="style2">
+								<li><a href="#">Etiam feugiat condimentum</a></li>
+								<li><a href="#">Aliquam imperdiet suscipit odio</a></li>
+								<li><a href="#">Sed porttitor cras in erat nec</a></li>
+								<li><a href="#">Felis varius pellentesque potenti</a></li>
+								<li><a href="#">Nullam scelerisque blandit leo</a></li>
+							</ul>
+						</section>
+					</div>
+					<div class="col-3 col-6-medium col-12-small">
+
+						<!-- Contact --
+						<section class="widget contact last">
+							<h3>Contact Us</h3>
+							<ul>
+								<li><a href="mailto:info@urig.io" class="icon solid fas fa-at"><span
+											class="label">Email</span></a>
+								</li>
+								<li><a href="https://mastodon.online/@urig" class="icon solid fab fa-mastodon"><span
+											class="label">Mastodon</span></a>
+								</li>
+								<li><a href="https://www.linkedin.com/in/urigoldstein/"
+										class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a>
+								</li>
+							</ul>
+							<p>1234 Fictional Road<br />
+								Nashville, TN 00000<br />
+								(800) 555-0000</p>
+						</section>
+
+					</div>
+				</div>
+				-->
+			<div class="row">
+				<div class="col-12">
+					<div id="copyright">
+						<ul class="menu">
+							<li>&copy; urig.io. All rights reserved</li>
+							<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	</div>
+
+	<!-- Scripts -->
+
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.dropotron.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
